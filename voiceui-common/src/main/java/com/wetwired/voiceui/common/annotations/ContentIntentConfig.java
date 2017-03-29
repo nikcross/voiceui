@@ -1,0 +1,14 @@
+package com.wetwired.voiceui.common.annotations;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+/**
+ * @author Nik Cross
+ */
+@Retention(RetentionPolicy.RUNTIME)
+public @interface ContentIntentConfig {
+	String name();
+	String contentId();
+	String[] utterances();
+}
